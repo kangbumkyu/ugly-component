@@ -1,3 +1,24 @@
-button {
-  font-size: 60px;
+.ugly-button {
+  font-size: 14px;
+  padding: 11px 20px;
+  cursor: pointer;
+  border: 0;
+}
+
+.ugly-button:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  transition: background-color 250ms;
+}
+
+.ugly-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.ugly-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.ugly-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
 }

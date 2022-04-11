@@ -20,4 +20,32 @@ HelloWorld.args = {
 export const ClickMe = Template.bind({});
 ClickMe.args = {
   label: "Click me!",
+  onClick: (event) => {
+    console.log("Clicked Success");
+  },
+};
+
+export const Small = Template.bind({});
+Small.args = {
+  label: "I'm small!",
+  size: "small",
+};
+
+export const Medium = Template.bind({});
+Medium.args = {
+  label: "I'm medium!",
+  size: "medium",
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  label: "I'm large!",
+  size: "large",
+};
+
+export const Custom = Template.bind({});
+Custom.args = {
+  label: "I'm Custom!",
+  size: "large",
+  padding: "0 100px",
 };

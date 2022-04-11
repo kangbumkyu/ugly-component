@@ -1,12 +1,35 @@
 import React from "react";
 import "./Button.css";
 
-export interface ButtonProps {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
+  size?: "small" | "medium" | "large";
+  backgroundColor?: string;
+  color?: string;
+  padding?: string;
+  onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 }
 
-const Button = (props: ButtonProps) => {
-  return <button>{props.label}</button>;
+const Button = ({
+  label,
+  size = "medium",
+  backgroundColor,
+  color,
+  padding,
+  onClick,
+  ...props
+}: ButtonProps) => {
+  return (
+    <button
+      className={`ugly-button ugly-button--${size}`}
+      style={{ backgroundColor, color, padding }}
+      onClick={onClick}
+      {...props}
+    >
+      {label}
+    </button>
+  );
 };
 
 export default Button;
