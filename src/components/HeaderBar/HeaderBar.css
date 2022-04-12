@@ -1,0 +1,38 @@
+.ugly-headerbar {
+  width: 100%;
+  height: 80px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
+}
+.ugly-headerbar--logo {
+  margin-right: 50px;
+}
+
+.ugly-headerbar--list {
+  display: flex;
+  align-items: center;
+}
+
+.ugly-headerbar--list-item {
+  list-style: none;
+  margin: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.ugly-headerbar--list-item:hover {
+  border-color: #505363;
+  transition: border-color 0.3s;
+}
+
+.ugly-headerbar--list-item-link {
+  text-decoration: none;
+  color: inherit;
+}
