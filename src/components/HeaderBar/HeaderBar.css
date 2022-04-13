@@ -6,12 +6,14 @@
   border-color: transparent;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 10px;
   background-color: #000000;
   color: #ffffff;
 }
 .ugly-headerbar--logo {
   margin-right: 50px;
+  cursor: pointer;
 }
 
 .ugly-headerbar--list {
@@ -24,15 +26,12 @@
   margin: 0 10px;
   border: 1px solid transparent;
   border-radius: 8px;
-  padding: 5px;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .ugly-headerbar--list-item:hover {
   border-color: #505363;
   transition: border-color 0.3s;
-}
-
-.ugly-headerbar--list-item-link {
-  text-decoration: none;
-  color: inherit;
 }

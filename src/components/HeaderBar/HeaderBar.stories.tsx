@@ -16,6 +16,5 @@ const Template: ComponentStory<typeof HeaderBar> = (args) => (
 export const ExampleOne = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 ExampleOne.args = {
-  logo: "LOGO",
   menus: ["Markets", "Positions"],
 };

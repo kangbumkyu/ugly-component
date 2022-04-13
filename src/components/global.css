@@ -3,3 +3,12 @@
   padding: 0;
   margin: 0;
 }
+
+.primary {
+  color: #ffffff;
+  background-color: #007994;
+}
+
+.primary:hover {
+  background-color: #00a2c7;
+}

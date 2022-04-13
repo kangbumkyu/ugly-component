@@ -27,7 +27,7 @@ const Button = ({
       onClick={onClick}
       {...props}
     >
-      {label}
+      <span>{label}</span>
     </button>
   );
 };
